@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Quiz</title>
+    <link rel="stylesheet" href="css/quiz.css">
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/quiz.css">
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/455728dec8.js" crossorigin="anonymous"></script>
+    <!-- Progress Bar -->
+    <script src="js/progressbar.min.js"></script>
+    <!-- Parallax -->
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+</head>
+<body>
+    <!-- Cabeçalho da Página 02 - Quiz -->
+    <header>
+        <div class="container" id="nav-container">
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <a href="index.html" class="navbar-brand">
+                    <img id="logo" src="img/logotipo01png.png" alt="LinkedIn">Seu Quiz
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data#target="navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" id="home-menu" href="index.html">Início</a>
+                        <a class="nav-item nav-link" id="about-menu">Sobre o jogo</a>
+                        <a class="nav-item nav-link" id="services-menu" href="page02-quiz.html">Jogue agora</a>
+                        <a class="nav-item nav-link" id="criador-menu">Sobre o criador</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Quiz -->
+    <div id="quiz-area">
+        <div class="container mt-5">
+            <h1 class="main-title">Quiz de Perguntas</h1>
+            <form id="quizForm">
+                <div class="card mt-3">
+                    <div class="card-header"><strong>1.</strong> O verbo <strong>'to be'</strong> significa ser/estar. Das frases abaixo, qual delas utiliza  o verbo 'to be' na sua formação?</div>
+                    <div class="card-body">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="question1" id="q1a" value="my">
+                            <label class="form-check-label" for="q1a">My mother cooks very well</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="question1" id="q1b" value="i">
+                            <label class="form-check-label" for="q1b">I love chocolate so much</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="question1" id="q1c" value="we">
+                            <label class="form-check-label" for="q1c">We are best friends</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-header"><strong>2.</strong> Sabendo que o <strong>Simple Present</strong> é usado para falar de fatos, hábitos, e rotina diária, qual frase abaixo está usando o Simple Present?</div>
+                    <div class="card-body">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="question2" id="q2a" value="yes">
+                            <label class="form-check-label" for="q2a">Yesterday, I studied math with my friends</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="question2" id="q2b" value="emma">
+                            <label class="form-check-label" for="q2b">Emma wakes up 7AM everyday</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="question2" id="q2c" value="iused">
+                            <label class="form-check-label" for="q2c">I used to travel every year</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-header"><strong>3.</strong> No inglês, a regra geral é que <strong>adjetivos</strong> devem ser posicionados <u>antes</u> do <strong>substantivo</strong>. Sabendo disso, qual das frases abaixo está correta?</div>
+                    <div class="card-body">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="question3" id="q3a" value="istudy">
+                            <label class="form-check-label" for="q3a">My father is an organized person</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="question3" id="q3b" value="emma">
+                            <label class="form-check-label" for="q3b">He has a car old</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="question3" id="q3c" value="Índico">
+                            <label class="form-check-label" for="q3c">John and Mary are friends close</label>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary mt-3" value="verificar()">Finalizar e enviar</button>
+            </form>
+            <div id="result" class="mt-3"></div>
+        </div>
+    </div>
+    
+    <script src="js/js-quiz.js"></script>
+</body>
+</html>
