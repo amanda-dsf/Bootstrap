@@ -1,0 +1,79 @@
+/* Gerais */
+
+body {
+    font-family:'Roboto', sans-serif;
+}
+
+.row {
+    margin: 0;
+}
+
+.container {
+    padding: 70px 0px;
+}
+
+p, li {
+    color:gray
+}
+
+/* Barra de navegação */
+
+header, .navbar {
+    background-color: #10193A;
+}
+
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#logo {
+    width: 75px;
+}
+
+.navbar-brand {
+    padding: 0;
+    color: white;
+}
+
+.navbar-brand:hover {
+    color: white;
+}
+
+#navbar-links a {
+    color: white;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+   padding: 1rem .8rem; 
+}
+
+/* Área do Quiz */
+
+#quiz-area { 
+    color: #f9f9f9;
+}
+
+.main-title {
+    color: #444;
+    margin: 0 0 65px 0;
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.main-title::after {
+    content: "";
+    border-top: 2px solid #333;
+    width: 15%;
+    position: absolute;
+    top: 60px;
+    left: 42.5%;
+}
+
+.about-title {
+    font-size: 19px;
+    color: #444;
+    text-transform: uppercase;
+    font-weight: bold;
+}
